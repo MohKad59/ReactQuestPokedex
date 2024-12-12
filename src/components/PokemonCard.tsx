@@ -1,4 +1,11 @@
-function PokemonCard({ pokemon }) {
+interface TypePokemon {
+  pokemon: {
+    name: string;
+    imgSrc?: string;
+  };
+}
+
+function PokemonCard({ pokemon }: TypePokemon) {
   return (
     <figure>
       {pokemon.imgSrc != null ? (
