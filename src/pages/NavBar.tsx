@@ -7,6 +7,7 @@ interface NavBarProps {
   setPokemonIndex: (index: number) => void;
   pokemonList: Pokemon[];
 }
+
 function NavBar({ setPokemonIndex, pokemonList }: NavBarProps) {
   return (
     <nav>
